@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name main-rescue)(type Legacy)(uri ${KIPRJMOD}/main-rescue.lib)(options "")(descr ""))
+  (lib (name 868Ant)(type Legacy)(uri D:/KicadSpareLibrary/SamacSys_Parts.lib)(options "")(descr ""))
+  (lib (name sma)(type Legacy)(uri C:/Github/Indoor-Air-Quality-BME688-STM32WLE5JC/KiCad/KicadMainLibrary/smaConnector.lib)(options "")(descr ""))
+)
