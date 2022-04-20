@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name main-rescue)(type Legacy)(uri ${KIPRJMOD}/main-rescue.lib)(options "")(descr ""))
+  (lib (name RescueMicrochip)(type Legacy)(uri "C:/Github/Indoor-Air-Quality-BME688-STM32WLE5JC/KiCad/KiCad Projects/MCU DIFFERENT PACKAGe/MICROCHIPLORABOARD/MICROCHIPLORABOARD-rescue.lib")(options "")(descr ""))
+)

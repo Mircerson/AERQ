@@ -1,0 +1,78 @@
+Info: Processing component "R2:/617AAB6E:Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder".
+Info: Processing component "GND1:/61981146:TestPoint:TestPoint_Pad_D1.5mm".
+Info: Processing component "HB1:/61853D6C:LED_SMD:LED_0201_0603Metric_Pad0.64x0.40mm_HandSolder".
+Info: Processing component "J1:/617BE23C:Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical".
+Info: Processing component "J2:/61963625:TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-2_1x02_P2.54mm_Horizontal".
+Info: Processing component "J3:/6180F261:Connector_USB:USB_Micro-B_Amphenol_10103594-0001LF_Horizontal".
+Info: Processing component "3V3:/618832CE:LED_SMD:LED_0201_0603Metric_Pad0.64x0.40mm_HandSolder".
+Info: Processing component "J5:/6195374E:Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical".
+Info: Processing component "J6:/621E8932:Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical".
+Info: Processing component "L1:/619CD27C:Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder".
+Info: Processing component "R1:/617A9750:Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder".
+Info: Processing component "J4:/618D8888:Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical".
+Info: Processing component "R3:/61856ED3:Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder".
+Info: Processing component "R4:/618772FD:Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder".
+Info: Processing component "R5:/618832D5:Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder".
+Info: Processing component "RST1:/6197BBD1:TestPoint:TestPoint_Pad_D1.5mm".
+Info: Processing component "SCL1:/61906980:TestPoint:TestPoint_Pad_D1.5mm".
+Info: Processing component "SDA1:/619098E4:TestPoint:TestPoint_Pad_D1.5mm".
+Info: Processing component "U1:/6164AFD9:mmilibrary:LoRa-E5".
+Info: Processing component "U2:/61802F1D:Package_LGA:Bosch_LGA-8_3x3mm_P0.8mm_ClockwisePinNumbering".
+Info: Processing component "U3:/61787A56:Package_TO_SOT_SMD:SOT-23-5_HandSoldering".
+Info: Processing component "C3:/61781AAA:Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder".
+Info: Processing component "3V3_OUT1:/618F8508:TestPoint:TestPoint_Pad_D1.5mm".
+Info: Processing component "ALERT1:/618772F6:LED_SMD:LED_0201_0603Metric_Pad0.64x0.40mm_HandSolder".
+Info: Processing component "BOOT_TP1:/6197CBDD:TestPoint:TestPoint_Pad_D1.5mm".
+Info: Processing component "C1:/61772FC0:Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder".
+Info: Processing component "C2:/6179A095:Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder".
+Info: Processing component "C4:/6179A0A9:Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder".
+Info: Processing component "C5:/618C5A71:Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder".
+Info: Processing component "C6:/618C69FF:Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder".
+Info: Processing component "C7:/619CC8DD:Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder".
+Info: Processing component "C8:/619CDAB6:Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder".
+Info: Processing component "E1:/619C1B4A:mmilibrary:XDCR_ANT-868-USP410".
+Info: Processing component "FB1:/618FFA2B:Capacitor_SMD:C_0201_0603Metric_Pad0.64x0.40mm_HandSolder".
+Info: Processing component "FT1:/619C09A1:TestPoint:TestPoint_Pad_D1.5mm".
+Info: Processing component "F1:/61906770:Capacitor_SMD:C_0201_0603Metric_Pad0.64x0.40mm_HandSolder".
+Add net Net-(U1-Pad20).
+Add net ADC_IN3.
+Connect U1 pin 7 to ADC_IN3.
+Add net Net-(U1-Pad11).
+Connect U1 pin 11 to Net-(U1-Pad11).
+Add net Net-(U1-Pad8).
+Connect U1 pin 8 to Net-(U1-Pad8).
+Add net Net-(U1-Pad12).
+Connect U1 pin 12 to Net-(U1-Pad12).
+Add net Net-(U1-Pad13).
+Connect U1 pin 13 to Net-(U1-Pad13).
+Change GND reference to GND1.
+Connect U1 pin 20 to Net-(U1-Pad20).
+Add net Net-(U1-Pad21).
+Connect U1 pin 21 to Net-(U1-Pad21).
+Add net Net-(U1-Pad25).
+Connect U1 pin 25 to Net-(U1-Pad25).
+Add net Net-(U1-Pad26).
+Connect U1 pin 26 to Net-(U1-Pad26).
+Change 3V3 reference to 3V3_OUT1.
+Connect USB_PWR pin 4 to Net-(J3-Pad4).
+Add net Net-(J1-Pad6).
+Add net Net-(J3-Pad2).
+Connect USB_PWR pin 2 to Net-(J3-Pad2).
+Change ANT reference to E1.
+Change UART reference to J4.
+Change USB_PWR reference to J3.
+Change USART reference to J5.
+Add net Net-(E1-Pad2).
+Add J6 (footprint "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical").
+Connect ANT pin 2 to Net-(E1-Pad2).
+Connect DEBUG pin 6 to Net-(J1-Pad6).
+Connect USB_PWR pin 3 to Net-(J3-Pad3).
+Change DEBUG reference to J1.
+Change FT reference to FT1.
+Add net Net-(J3-Pad3).
+Change HB reference to HB1.
+Change RST reference to RST1.
+Change BOOT reference to BOOT_TP1.
+Change SCL reference to SCL1.
+Add net Net-(J3-Pad4).
+Change SDA reference to SDA1.
