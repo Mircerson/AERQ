@@ -19,7 +19,7 @@ For the PCB with the integrated antenna, click here [here](/PCB/101-5/)
 For the PCB with an external u.Fl connector, click [here](/PCB/101-3/)
 
 
-Find the Seeed E5-LoRa module here [here](https://www.seeedstudio.com/LoRa-E5-Wireless-Module-p-4745.html).
+Find the Seeed E5-LoRa module [here](https://www.seeedstudio.com/LoRa-E5-Wireless-Module-p-4745.html).
 
 
 ## Code
