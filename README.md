@@ -2,7 +2,7 @@
 
 ## Introduction
 This is the repository for AERQ, a USB-powered indoor air quality monitor using the
-Bosch BME688 sensor, running on mbed os.
+[here](/PCB/101-5/) Bosch BME688 sensor, running on mbed os.
 It measures temperature, humidity, CO2 and IAQ using the BSEC 2.x library.
 This data is then sent to The Things Network.
 ![Boards](./Images/boards.jpg "PCBs")
@@ -26,6 +26,9 @@ Insert your TTN credentials in mbed_app.json before running the application.
 This code features a custom target on mbed os which configures the RF switch properly and adds a few macros for the board.
 
 See mbed_app.json and custom_targets.json for more details.
+
+
+Thanks to [hallard](https://github.com/hallard/LoRa-E5-Breakout) for adding the support in the official mbed os custom target repository.
 
 
 ## Payload decoder for TTN
@@ -102,3 +105,5 @@ A simple KivyMD app was made for Android to receive packets:
 Data can also be parsed through Azure IoT Hub to the Azure IoT Central
 
 <img src="Images/iotcentral.png" >
+
+
