@@ -1,0 +1,227 @@
+{
+    "config": {
+        "main_stack_size":     { "value": 4096 }
+    },
+    "target_overrides": {
+        "*": {
+            "platform.stdio-convert-newlines": true,
+            "platform.stdio-baud-rate": 115200,
+            "platform.default-serial-baud-rate": 115200,
+            "platform.stdio-buffered-serial": 1,
+            "mbed-trace.enable": true,
+            "mbed-trace.max-level": "TRACE_LEVEL_DEBUG",
+            "lora.over-the-air-activation": true,
+            "lora.duty-cycle-on": false,
+            "lora.phy": "EU868",
+            "lora.device-eui": "{ 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }",
+            "lora.application-eui": "{ 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }",
+            "lora.application-key": "{ 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }"
+        },
+
+        "K64F": {
+            "target.components_add":            ["SX1276"],
+            "sx1276-lora-driver.spi-mosi":       "ARDUINO_UNO_D11",
+            "sx1276-lora-driver.spi-miso":       "ARDUINO_UNO_D12",
+            "sx1276-lora-driver.spi-sclk":       "ARDUINO_UNO_D13",
+            "sx1276-lora-driver.spi-cs":         "ARDUINO_UNO_D10",
+            "sx1276-lora-driver.reset":          "ARDUINO_UNO_A0",
+            "sx1276-lora-driver.dio0":           "ARDUINO_UNO_D2",
+            "sx1276-lora-driver.dio1":           "ARDUINO_UNO_D3",
+            "sx1276-lora-driver.dio2":           "ARDUINO_UNO_D4",
+            "sx1276-lora-driver.dio3":           "ARDUINO_UNO_D5",
+            "sx1276-lora-driver.dio4":           "ARDUINO_UNO_D8",
+            "sx1276-lora-driver.dio5":           "ARDUINO_UNO_D9",
+            "sx1276-lora-driver.ant-switch":     "ARDUINO_UNO_A4"
+        },
+
+        "K64F_SX126X": {
+            "target.components_add":            ["SX126X"],
+            "SX126X-lora-driver.spi-mosi":       "ARDUINO_UNO_D11",
+            "SX126X-lora-driver.spi-miso":       "ARDUINO_UNO_D12",
+            "SX126X-lora-driver.spi-sclk":       "ARDUINO_UNO_D13",
+            "SX126X-lora-driver.spi-cs":         "ARDUINO_UNO_D7",
+            "SX126X-lora-driver.reset":          "ARDUINO_UNO_A0",
+            "SX126X-lora-driver.dio1":           "ARDUINO_UNO_D5",
+            "SX126X-lora-driver.busy":           "ARDUINO_UNO_D3",
+            "SX126X-lora-driver.freq-select":    "ARDUINO_UNO_A1",
+            "SX126X-lora-driver.device-select":  "ARDUINO_UNO_A2",
+            "SX126X-lora-driver.crystal-select": "ARDUINO_UNO_A3",
+            "SX126X-lora-driver.ant-switch":     "ARDUINO_UNO_D8"
+        },
+
+        "DISCO_L072CZ_LRWAN1": {
+            "main_stack_size":      1024
+        },
+
+        "NUCLEO_WL55JC": {
+            "stm32wl-lora-driver.debug_rx": "LED1",
+            "stm32wl-lora-driver.debug_tx": "LED2"
+        },
+
+        "MTB_MURATA_ABZ": {
+            "main_stack_size":      1024,
+            "target.components_add":            ["SX1276"],
+            "sx1276-lora-driver.spi-mosi":       "PA_7",
+            "sx1276-lora-driver.spi-miso":       "PA_6",
+            "sx1276-lora-driver.spi-sclk":       "PB_3",
+            "sx1276-lora-driver.spi-cs":         "PA_15",
+            "sx1276-lora-driver.reset":          "PC_0",
+            "sx1276-lora-driver.dio0":           "PB_4",
+            "sx1276-lora-driver.dio1":           "PB_1",
+            "sx1276-lora-driver.dio2":           "PB_0",
+            "sx1276-lora-driver.dio3":           "PC_13",
+            "sx1276-lora-driver.txctl":          "PC_2",
+            "sx1276-lora-driver.rxctl":          "PA_1",
+            "sx1276-lora-driver.pwr-amp-ctl":    "PC_1",
+            "sx1276-lora-driver.tcxo":           "PA_12"
+        },
+
+        "XDOT_L151CC": {
+            "target.components_add":             ["SX1272"],
+            "sx1272-lora-driver.spi-mosi":        "LORA_MOSI",
+            "sx1272-lora-driver.spi-miso":        "LORA_MISO",
+            "sx1272-lora-driver.spi-sclk":        "LORA_SCK",
+            "sx1272-lora-driver.spi-cs":          "LORA_NSS",
+            "sx1272-lora-driver.reset":           "LORA_RESET",
+            "sx1272-lora-driver.dio0":            "LORA_DIO0",
+            "sx1272-lora-driver.dio1":            "LORA_DIO1",
+            "sx1272-lora-driver.dio2":            "LORA_DIO2",
+            "sx1272-lora-driver.dio3":            "LORA_DIO3",
+            "sx1272-lora-driver.dio4":            "LORA_DIO4"
+        },
+
+        "MTB_MTS_XDOT": {
+            "target.components_add":             ["SX1272"],
+            "sx1272-lora-driver.spi-mosi":        "LORA_MOSI",
+            "sx1272-lora-driver.spi-miso":        "LORA_MISO",
+            "sx1272-lora-driver.spi-sclk":        "LORA_SCK",
+            "sx1272-lora-driver.spi-cs":          "LORA_NSS",
+            "sx1272-lora-driver.reset":           "LORA_RESET",
+            "sx1272-lora-driver.dio0":            "LORA_DIO0",
+            "sx1272-lora-driver.dio1":            "LORA_DIO1",
+            "sx1272-lora-driver.dio2":            "LORA_DIO2",
+            "sx1272-lora-driver.dio3":            "LORA_DIO3",
+            "sx1272-lora-driver.dio4":            "LORA_DIO4"
+        },
+
+        "FF1705_L151CC": {
+            "target.components_add":             ["SX1272"],
+            "sx1272-lora-driver.spi-mosi":        "LORA_MOSI",
+            "sx1272-lora-driver.spi-miso":        "LORA_MISO",
+            "sx1272-lora-driver.spi-sclk":        "LORA_SCK",
+            "sx1272-lora-driver.spi-cs":          "LORA_NSS",
+            "sx1272-lora-driver.reset":           "LORA_RESET",
+            "sx1272-lora-driver.dio0":            "LORA_DIO0",
+            "sx1272-lora-driver.dio1":            "LORA_DIO1",
+            "sx1272-lora-driver.dio2":            "LORA_DIO2",
+            "sx1272-lora-driver.dio3":            "LORA_DIO3",
+            "sx1272-lora-driver.dio4":            "LORA_DIO4"
+        },
+
+        "MTS_MDOT_F411RE": {
+            "target.components_add":             ["SX1272"],
+            "sx1272-lora-driver.spi-mosi":        "LORA_MOSI",
+            "sx1272-lora-driver.spi-miso":        "LORA_MISO",
+            "sx1272-lora-driver.spi-sclk":        "LORA_SCK",
+            "sx1272-lora-driver.spi-cs":          "LORA_NSS",
+            "sx1272-lora-driver.reset":           "LORA_RESET",
+            "sx1272-lora-driver.dio0":            "LORA_DIO0",
+            "sx1272-lora-driver.dio1":            "LORA_DIO1",
+            "sx1272-lora-driver.dio2":            "LORA_DIO2",
+            "sx1272-lora-driver.dio3":            "LORA_DIO3",
+            "sx1272-lora-driver.dio4":            "LORA_DIO4",
+            "sx1272-lora-driver.dio5":            "LORA_DIO5",
+            "sx1272-lora-driver.txctl":           "LORA_TXCTL",
+            "sx1272-lora-driver.rxctl":           "LORA_RXCTL"
+        },
+
+        "MTB_ADV_WISE_1510": {
+            "target.components_add":             ["SX1276"],
+            "sx1276-lora-driver.spi-mosi":        "SPI_RF_MOSI",
+            "sx1276-lora-driver.spi-miso":        "SPI_RF_MISO",
+            "sx1276-lora-driver.spi-sclk":        "SPI_RF_SCK",
+            "sx1276-lora-driver.spi-cs":          "SPI_RF_CS",
+            "sx1276-lora-driver.reset":           "SPI_RF_RESET",
+            "sx1276-lora-driver.dio0":            "DIO0",
+            "sx1276-lora-driver.dio1":            "DIO1",
+            "sx1276-lora-driver.dio2":            "DIO2",
+            "sx1276-lora-driver.dio3":            "DIO3",
+            "sx1276-lora-driver.dio4":            "DIO4",
+            "sx1276-lora-driver.dio5":            "DIO5",
+            "sx1276-lora-driver.ant-switch":      "ANT_SWITCH"
+        },
+
+        "MTB_RAK811": {
+            "target.components_add":            ["SX1276"],
+            "sx1276-lora-driver.spi-mosi":       "SPI_RF_MOSI",
+            "sx1276-lora-driver.spi-miso":       "SPI_RF_MISO",
+            "sx1276-lora-driver.spi-sclk":       "SPI_RF_SCK",
+            "sx1276-lora-driver.spi-cs":         "SPI_RF_CS",
+            "sx1276-lora-driver.reset":          "SPI_RF_RESET",
+            "sx1276-lora-driver.dio0":           "DIO0",
+            "sx1276-lora-driver.dio1":           "DIO1",
+            "sx1276-lora-driver.dio2":           "DIO2",
+            "sx1276-lora-driver.dio3":           "DIO3",
+            "sx1276-lora-driver.dio4":           "DIO4",
+            "sx1276-lora-driver.txctl":          "ANT_CTX_PA",
+            "sx1276-lora-driver.rxctl":          "ANT_CRX_RX",
+            "sx1276-lora-driver.tcxo":           "RF_TCXO_EN"
+        },
+
+        "IM880B": {
+            "main_stack_size":      1024,
+            "target.components_add":            ["SX1272"],
+            "sx1272-lora-driver.spi-mosi":       "SPI_RF_MOSI",
+            "sx1272-lora-driver.spi-miso":       "SPI_RF_MISO",
+            "sx1272-lora-driver.spi-sclk":       "SPI_RF_SCK",
+            "sx1272-lora-driver.spi-cs":         "SPI_RF_NSS",
+            "sx1272-lora-driver.reset":          "SPI_RF_RESET",
+            "sx1272-lora-driver.dio0":           "DIO0",
+            "sx1272-lora-driver.dio1":           "DIO1",
+            "sx1272-lora-driver.dio2":           "DIO2",
+            "sx1272-lora-driver.dio3":           "DIO3",
+            "sx1272-lora-driver.dio4":           "DIO4",
+            "sx1272-lora-driver.txctl":          "ANT_CTX_PA",
+            "sx1272-lora-driver.rxctl":          "ANT_CRX_RX"
+        },
+
+        "EP_AGORA": {
+            "target.macros_add":   ["NRFX_GPIOTE_CONFIG_NUM_OF_LOW_POWER_EVENTS=4"],
+            "target.components_add":            ["SX1276"],
+            "sx1276-lora-driver.spi-mosi":       "PIN_NAME_LORA_MOSI",
+            "sx1276-lora-driver.spi-miso":       "PIN_NAME_LORA_MISO",
+            "sx1276-lora-driver.spi-sclk":       "PIN_NAME_LORA_SCLK",
+            "sx1276-lora-driver.spi-cs":         "PIN_NAME_LORA_SSN",
+            "sx1276-lora-driver.reset":          "PIN_NAME_LORA_RESETN",
+            "sx1276-lora-driver.dio0":           "PIN_NAME_LORA_DIO0",
+            "sx1276-lora-driver.dio1":           "PIN_NAME_LORA_DIO1",
+            "sx1276-lora-driver.dio2":           "PIN_NAME_LORA_DIO2",
+            "sx1276-lora-driver.dio3":           "PIN_NAME_LORA_DIO3"
+        },
+
+        "NUCLEO_L073RZ": {
+            "main_stack_size":     2048,
+            "target.components_add":            ["SX126X"],
+            "SX126X-lora-driver.spi-mosi":       "ARDUINO_UNO_D11",
+            "SX126X-lora-driver.spi-miso":       "ARDUINO_UNO_D12",
+            "SX126X-lora-driver.spi-sclk":       "ARDUINO_UNO_D13",
+            "SX126X-lora-driver.spi-cs":         "ARDUINO_UNO_D7",
+            "SX126X-lora-driver.reset":          "ARDUINO_UNO_A0",
+            "SX126X-lora-driver.dio1":           "ARDUINO_UNO_D5",
+            "SX126X-lora-driver.busy":           "ARDUINO_UNO_D3",
+            "SX126X-lora-driver.freq-select":    "ARDUINO_UNO_A1",
+            "SX126X-lora-driver.device-select":  "ARDUINO_UNO_A2",
+            "SX126X-lora-driver.crystal-select": "ARDUINO_UNO_A3",
+            "SX126X-lora-driver.ant-switch":     "ARDUINO_UNO_D8"
+        },
+         "AERQ": {
+             
+            "stm32wl-lora-driver.debug_tx": "PB_5",
+            "stm32wl-lora-driver.debug_rx": "PB_10",
+            "stm32wl-lora-driver.debug_invert": 1,
+            "stm32wl-lora-driver.rf_switch_config":"RBI_CONF_RFO_HP"
+        }
+    },
+    "macros": ["MBEDTLS_USER_CONFIG_FILE=\"mbedtls_lora_config.h\""]
+}
+

@@ -1,0 +1,151 @@
+
+{
+    "BLUEPILL_F103C8": {
+        "inherits": [
+            "MCU_STM32F103x8"
+        ],
+        "overrides": {
+            "clock_source": "USE_PLL_HSE_XTAL"
+        },
+        "device_has_add": [
+            "USBDEVICE"
+        ],
+        "device_name": "STM32F103C8"
+    },
+    "MTB_MURATA_ABZ": {
+        "inherits": [
+            "MCU_STM32L082xZ"
+        ],
+        "detect_code": ["0456"],
+        "device_name": "STM32L082CZYx"
+    },
+    "GRASSHOPPER": {
+        "inherits": [
+            "MTB_MURATA_ABZ"
+        ]
+    },
+    "GNAT": {
+        "inherits": [
+            "MTB_MURATA_ABZ"
+        ]
+    },
+    "STWIN": {
+        "inherits": [
+            "MCU_STM32L4R9xI"
+        ],
+        "device_name": "STM32L4R9ZITx",
+        "supported_form_factors": [
+            "STMOD"
+        ],
+        "components_add": [
+            "BlueNRG_MS"
+        ],
+        "extra_labels_add": [
+            "CORDIO"
+        ],
+        "features": [
+            "BLE"
+        ]
+    },
+    "LORA_E5": {
+        "inherits": [
+            "MCU_STM32WLE5xC"
+        ],
+        "device_name": "STM32WLE5JCIx"
+    },
+    "LORA_E5_BREAKOUT": {
+        "inherits": ["LORA_E5"],
+        "overrides":{
+            "lse_available" : 0
+        },
+        "macros_add": [
+            "LED1=PB_5", 
+            "LED2=PB_10",
+            "BUTTON1=PB_13"
+        ]
+
+    },
+    "LORA_E5_MINI": {
+        "inherits": [
+            "LORA_E5"
+        ],
+        "macros_add": [
+            "LED1=PB_5", 
+            "BUTTON1=PB_13"
+        ]
+    },
+    "LORA_E5_DEV_BOARD": {
+        "inherits": [
+            "LORA_E5"
+        ],
+        "macros_add": [
+            "LED1=PB_5", 
+            "EN_3V3=PA_9", 
+            "EN_5V=PB_10", 
+            "BUTTON1=PB_13",
+            "BUTTON2=PA_0",
+            "RS485_REDE=PB_4"
+        ]
+    },
+    "LORA_E5_TINY": {
+        "inherits": [
+            "LORA_E5"
+        ],
+        "macros_add": [
+            "LED1=PA_9", 
+            "LED2=PB_13", 
+            "BUTTON1=PB_4"
+        ]
+    },
+    "RAK3172": {
+        "inherits": [
+            "MCU_STM32WLE5xC"
+        ],
+        "device_name": "STM32WLE5CCUx"
+    },
+    "RAK3172_BREAKOUT": {
+        "inherits": [
+            "RAK3172"
+        ],
+        "macros_add": [
+            "LED1=PA_9", 
+            "LED2=PA_10"
+        ]
+    },
+    "CORE2":
+    {
+        "inherits": ["MCU_STM32F4"],
+        "extra_labels_add": ["STM32F407xG"],
+        "macros_add": [
+            "STM32F407xx",
+            "ENCODER_1=TIM2",
+            "ENCODER_2=TIM8",
+            "ENCODER_3=TIM3",
+            "ENCODER_4=TIM4",
+            "UPPER_RESISTOR=5.6e4",
+            "LOWER_RESISTOR=1.0e4",
+            "VIN_MEAS_CORRECTION=0.986"
+        ],
+        "overrides": {
+            "lse_available": 0,
+            "clock_source": "USE_PLL_HSE_XTAL"
+        },
+        "device_has_add": ["TRNG", "CAN"],
+        "device_has_remove": ["LPTICKER"],
+        "device_name": "STM32F407ZG"
+    },
+    "AERQ": {
+        "inherits": ["LORA_E5"],
+        "overrides":{
+            "lse_available" : 0
+        },
+        "device_has_add": ["STORAGE","FLASH","FLASHIAP"],
+        "macros_add": [
+            "ALERT_LED=PB_0", 
+            "HEARTBEAT_LED=PA_10",
+            "AERQ_SCL=PB_15",
+            "AERQ_SDA=PA_15",
+            "FACTORY=PA_0"
+        ]
+    }
+}
