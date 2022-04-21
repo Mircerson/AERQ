@@ -9,6 +9,8 @@ This data is then sent to The Things Network.
 
 
 
+
+
 ## PCB
 This project features a custom 4 layer board using the Seeed E5-LoRa and the Bosch BME688.
 Two variants of the board, one with a chip antenna ( Linx USP-410 ) and one with a u.Fl connector.
