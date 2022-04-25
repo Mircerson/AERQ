@@ -13,9 +13,7 @@ This data is then sent to The Things Network.
 This project features a custom 4 layer board using the Seeed E5-LoRa and the Bosch BME688.
 Two variants of the board, one with a chip antenna ( Linx USP-410 ) and one with a u.Fl connector.
 
-Find  more about the Seeed E5-LoRa module [here](https://www.seeedstudio.com/LoRa-E5-Wireless-Module-p-4745.html).
-
-Buy the STM32WLE - LoRa module here [here](https://www.seeedstudio.com/LoRa-E5-Wireless-Module-p-4745.html)
+Find more about the [STM32WL - Seeed E5-LoRa](https://www.seeedstudio.com/LoRa-E5-Wireless-Module-p-4745.html).
 
 
 For the PCB with the integrated antenna, click here [here](/PCB/101-5/)
