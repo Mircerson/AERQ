@@ -9,23 +9,20 @@ This data is then sent to The Things Network.
 
 
 
-
-
 ## PCB
 This project features a custom 4 layer board using the Seeed E5-LoRa and the Bosch BME688.
 Two variants of the board, one with a chip antenna ( Linx USP-410 ) and one with a u.Fl connector.
+
+Find  more about the Seeed E5-LoRa module [here](https://www.seeedstudio.com/LoRa-E5-Wireless-Module-p-4745.html).
+
+Buy the STM32WLE - LoRa module here [here](https://www.seeedstudio.com/LoRa-E5-Wireless-Module-p-4745.html)
+
 
 For the PCB with the integrated antenna, click here [here](/PCB/101-5/)
 
 
 For the PCB with an external u.Fl connector, click [here](/PCB/101-3/)
 
-
-Want to get your E5-LoRa design assembled and made for free? Check this out!
-
-To accelerate the development of IoT industry to the next level, Seeed is 100% sponsoring Lora-E5 projects with the Seeed Fusion PCB Assembly Service for all hardware enthusiasts, designers, makers, and engineers around the world!
-
-Good ideas need to be discovered, and good projects deserve to be recognized, realized and widely disseminated! Each person is limited to two PCBA boards 100% completely FREE for one design, including PCB fabrication, the cost of parts, assembly and shipping. The design must include LoRa-E5. To find out more about this events click [here](https://www.seeedstudio.com/blog/2021/10/21/invigorate-your-inspiration-for-iot-with-lora-e5-and-free-seeed-fusion-pcba-prototypes/). 
 
 
 
@@ -41,8 +38,6 @@ See mbed_app.json and custom_targets.json for more details.
 
 
 Thanks to [hallard](https://github.com/hallard/LoRa-E5-Breakout) for adding the support in the official mbed os custom target repository.
-
-
 
 
 ## Payload decoder for TTN
